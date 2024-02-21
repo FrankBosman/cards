@@ -1,4 +1,4 @@
-import 'package:cards/views/pages/page_solidaire.dart';
+import 'package:cards/views/pages/page_solitaire.dart';
 import 'package:cards/views/pages/page_spider.dart';
 import 'package:cards/views/pages/page_tri_peaks.dart';
 import 'package:cards/views/widgets/menu/card_image.dart';
