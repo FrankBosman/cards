@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
 
-class GameCard extends StatelessWidget {
-  const GameCard({super.key, required this.title, required this.image, required this.onTap});
-  final String title;
+class CardImage extends StatelessWidget {
+  const CardImage({super.key, required this.image, required this.onTap});
   final String image;
   final Function onTap;
 
