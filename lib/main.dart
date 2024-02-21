@@ -18,6 +18,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.orange),
         useMaterial3: true,
       ),
+      // Load the home page
       home: const PageHome(title: 'Lets play some Cards'),
     );
   }
