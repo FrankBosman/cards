@@ -18,18 +18,27 @@ class PageHome extends StatelessWidget {
       ),
 
       // The content of the page consists of a column of images that redirect to the game pages
-      body: Center(child: SingleChildScrollView(
-        scrollDirection: Axis.vertical,
-
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            CardImage(image: "assets/Solitaire-logo.png", onTap: () => redirectTo((context) => const PageSolitaire(), context)),
-            CardImage(image: "assets/Tri-peaks-logo.png", onTap: () => redirectTo((context) => const PageTriPeaks(), context)),
-            CardImage(image: "assets/Spider-logo.png", onTap: () => redirectTo((context) => const PageSpider(), context)),
-          ],
+      body: Center(
+        child: SingleChildScrollView(
+          scrollDirection: Axis.vertical,
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: <Widget>[
+              CardImage(
+                  image: "assets/Solitaire-logo.png",
+                  onTap: () =>
+                      redirectTo((context) => const PageSolitaire(), context)),
+              CardImage(
+                  image: "assets/Tri-peaks-logo.png",
+                  onTap: () =>
+                      redirectTo((context) => const PageTriPeaks(), context)),
+              CardImage(
+                  image: "assets/Spider-logo.png",
+                  onTap: () =>
+                      redirectTo((context) => const PageSpider(), context)),
+            ],
+          ),
         ),
-      ),
       ),
     );
   }
@@ -37,7 +46,7 @@ class PageHome extends StatelessWidget {
   /// Redirects to the page that is passed as a parameter.<br>
   /// @param builder The page to redirect to as a function of the context, `(context) => const PageSolitaire()` for example.<br>
   /// @param context The context of the current page.
-  void redirectTo(Widget Function(BuildContext) builder, context){
+  void redirectTo(Widget Function(BuildContext) builder, context) {
     Navigator.push(
       context,
       MaterialPageRoute(builder: builder),

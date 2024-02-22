@@ -10,12 +10,16 @@ class CardImage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     // Show a clickable card with the image, which is clipped to a card shape
-    return GestureDetector(child: Card(
-      clipBehavior: Clip.antiAlias,
-      margin: const EdgeInsets.symmetric(vertical: 8, horizontal: 20),
-      child: Image.asset(image),
-    ),
-    onTap: () => onTap(),
+    return FractionallySizedBox(
+      widthFactor: 0.85,
+      child: GestureDetector(
+        child: Card(
+          clipBehavior: Clip.antiAlias,
+          margin: const EdgeInsets.symmetric(vertical: 8),
+          child: Image.asset(image, fit: BoxFit.contain),
+        ),
+        onTap: () => onTap(),
+      ),
     );
   }
 }
