@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+
 class PageSolitaire extends StatelessWidget {
   const PageSolitaire({super.key});
 

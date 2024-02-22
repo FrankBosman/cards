@@ -11,7 +11,7 @@ class CardImage extends StatelessWidget {
   Widget build(BuildContext context) {
     // Show a clickable card with the image, which is clipped to a card shape
     return FractionallySizedBox(
-      widthFactor: 0.8,
+      widthFactor: 0.85,
       child: GestureDetector(
         child: Card(
           clipBehavior: Clip.antiAlias,
